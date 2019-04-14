@@ -28,6 +28,7 @@ end
 
 
 os.loadAPI("transformation")
+os.loadAPI("dump")
 t = transformation.newTransform()
 
 
@@ -70,26 +71,39 @@ function dig_col()
 end
 
 
+function deposit()
+  transformation.gotoPosition(t, vector.makeZero())
+  transformation.face(t, vector.make(0,0,-1))
+  dump.tagged_dump_1234()
+end
+
+
 function run()
   x = x - 1
   z = z - 1
   for xI = 0, x do
     for zI = 0, z do
+      --- Dig a hole
+      dig_col()
+
+      --- Return to the surface
       topX = t.position.x
       topZ = t.position.z
       topV = vector.make(topX, 0, topZ)
       transformation.gotoPosition(t, topV)
       turtle.select(1)
       turtle.placeDown()
+      deposit()
 
+      --- Move to the XZ coordinate
       _x = xI * 3
       _z = zI * 3
       local v = vector.make(_x, 0, _z)
       transformation.gotoPosition(t, v)
-
-      dig_col()
     end
   end
+
+  deposit()
 end
 
 run()

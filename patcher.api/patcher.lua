@@ -7,6 +7,7 @@ modules['rotational'] = "JSd0jxL8"
 modules['transformation'] = "HVMqpjrT"
 modules['room2'] = "7AvQUPqY"
 modules['downminer'] = "X6GPgYFK"
+modules['dump'] = "WP2tv1t5"
 modules['test'] = "PLdr2YHf"
 
 print("Patching modules...")

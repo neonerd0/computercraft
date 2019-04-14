@@ -147,3 +147,7 @@ end
 function turnAround(currentTransform)
     return rotational.turnAround(currentTransform)
 end
+
+function face(transform, axis)
+    rotational.faceAxis(transform, axis)
+end
