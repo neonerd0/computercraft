@@ -33,7 +33,7 @@ function gotoPosition(transform, target)
     rotational.faceAxis(transform, x_axis)
     print("moving in x-axis")
     for i = 1, math.abs(d.x) do
-        transformation.forward(transform)
+        forward(transform)
         if transform.ret == false then
             print("Error moving forward!")
             return false
@@ -44,21 +44,32 @@ function gotoPosition(transform, target)
     rotational.faceAxis(transform, z_axis)
     print("moving in z-axis")
     for i = 1, math.abs(d.z) do
-        transformation.forward(transform)
+        forward(transform)
         if transform.ret == false then
             print("Error moving forward!")
             return false
         end
     end
 
+    motion = nil
     print("moving in y-axis")
     if d.y > 0 then --Move up
-        transformation.up(transform)
+        motion = up
     elseif d.y < 0 then --Move down
-        transformation.down(transform)
+        motion = down
     end
 
-    return transformation.ret
+    if motion ~= nil then
+        for i = 1, math.abs(d.y) do
+            motion(transform)
+            if transform.ret == false then
+                print("Error moving vertically!")
+                return false
+            end
+        end
+    end
+
+    return transform.ret
 end
 
 

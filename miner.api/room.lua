@@ -1,4 +1,5 @@
 os.loadAPI("transformation")
+os.loadAPI("move")
 t = transformation.newTransform()
 
 local tArgs = {...}
@@ -32,3 +33,29 @@ end
 
 os.loadAPI("transformation")
 t = transformation.newTransform()
+
+function digClear()
+  blocked, data = turtle.inspect()
+  while blocked do
+    turtle.dig()
+    blocked, data = turtle.inspect()
+  end
+  return blocked
+end
+
+y = y - 1
+z = z - 1
+x = x - 1
+
+for yI = 0, y do
+  for zI = 0, z do
+    turnZ = zI % 2
+    for xI = 0, x do
+
+      
+
+    end
+  end
+end
+
+transformation.gotoPosition(t, vector.makeZero())
