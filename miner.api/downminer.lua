@@ -27,8 +27,8 @@ while fuel < roomSize do
 end
 
 
-os.loadAPI("transformation")
 os.loadAPI("dump")
+os.loadAPI("transformation")
 t = transformation.newTransform()
 
 
@@ -83,6 +83,12 @@ function run()
   z = z - 1
   for xI = 0, x do
     for zI = 0, z do
+      --- Move to the XZ coordinate
+      _x = xI * 3
+      _z = zI * 3
+      local v = vector.make(_x, 0, _z)
+      transformation.gotoPosition(t, v)
+
       --- Dig a hole
       dig_col()
 
@@ -91,18 +97,15 @@ function run()
       topZ = t.position.z
       topV = vector.make(topX, 0, topZ)
       transformation.gotoPosition(t, topV)
+
+      --- Cover the hole
       turtle.select(1)
       turtle.placeDown()
-      deposit()
 
-      --- Move to the XZ coordinate
-      _x = xI * 3
-      _z = zI * 3
-      local v = vector.make(_x, 0, _z)
-      transformation.gotoPosition(t, v)
+      --- Deposite ores
+      deposit()
     end
   end
-
   deposit()
 end
 

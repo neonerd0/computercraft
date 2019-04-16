@@ -1,73 +1,34 @@
 os.loadAPI("transformation")
 t = transformation.newTransform()
 
-
-function lineMotionDoWhile(x, func)
-    for xI = 1, x do
-        --- Do action
-        local b = func()
-
-        --- Action failed
-        if not b then
-            print("func failed!")
-            return b
-        end
-
-        --- Dont move forward if last iteration
-        if xI == x then
-            return true
-        end
-
-        --- Move forward
-        t = transformation.forward(t)
-        
-        --- Cannot move forward
-        if t.ret == false then
-            return t.ret
-        end
-    end
-    return true
+local tArgs = {...}
+if #tArgs ~= 3 then
+  print("Requires length, width, height")
+  return
 end
 
+local x = tonumber(tArgs[1])
+local z = tonumber(tArgs[2])
+local y = tonumber(tArgs[3])
 
-function dig()
-    turtle.dig()
-    return true
+if x == nil or z == nil or y == nil then
+    print("Invalid dimensions")
+    return
+  end
+   
+if x < 0 or z < 0 or y < 0 then
+    print("Invalid (negative) dimensions")
+    return
 end
 
-
-function test1()
-    lineMotionDoWhile(10, dig)
-    turtle.digUp()
-    t = transformation.up(t)
-    t = transformation.turnAround(t)
-    lineMotionDoWhile(10, dig)
+local fuel = turtle.getFuelLevel()
+local roomSize = x * z * y
+while fuel < roomSize do
+  if not turtle.refuel(1) then
+    print("Not enough fuel")
+    return
+  end
 end
 
-function test2()
-    print("Starting..")
-    sleep(1)
-
-    print("Facing positive X-axis")
-    t = rotational.faceAxis(t, vector.make(1, 0, 0))
-    sleep(1.0)
-    print("Facing negative X-axis")
-    t = rotational.faceAxis(t, vector.make(-1, 0, 0))
-    sleep(1.0)
-
-    print("Facing positive z-axis")
-    t = rotational.faceAxis(t, vector.make(0, 0, 1))
-    sleep(1.0)
-    print("Facing negative z-axis")
-    t = rotational.faceAxis(t, vector.make(0, 0, -1))
-    sleep(1.0)
-end
-
-
-function test3()
-    t = transformation.gotoPosition(t, vector.make(1, 2, -3))
-end
-
-
-
-test3()
+os.loadAPI("transformation")
+t = transformation.newTransform()
