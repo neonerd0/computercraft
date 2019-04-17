@@ -40,22 +40,59 @@ function digClear()
     turtle.dig()
     blocked, data = turtle.inspect()
   end
-  return blocked
+  return true
+end
+
+function digClearUp()
+  blocked, data = turtle.inspectUp()
+  while blocked do
+    turtle.digUp()
+    blocked, data = turtle.inspectUp()
+  end
+  return true
 end
 
 y = y - 1
-z = z - 1
 x = x - 1
 
+turnLeft = transformation.turnLeft
+turnRight = transformation.turnRight
+
 for yI = 0, y do
+
+  -- if yI % 2 == 0 then
+  --   turnLeft = transformation.turnLeft
+  --   turnRight = transformation.turnRight
+  -- else
+  --   turnLeft = transformation.turnRight
+  --   turnRight = transformation.turnLeft
+  -- end
+
   for zI = 0, z do
-    turnZ = zI % 2
-    for xI = 0, x do
 
-      
-
+    turn = turnLeft
+    if zI % 2 == 0 then
+      turn = turnRight
     end
+
+    move.lineMotionDoWhile(t, x, digClear)
+
+    if zI < z then
+      turn(t)
+      digClear()
+      transformation.forward(t)
+      turn(t)
+    end
+
   end
+
+  digClearUp()
+
+  if yI < y then
+    transformation.up(t)
+  end
+  transformation.turnAround(t)
+
 end
 
 transformation.gotoPosition(t, vector.makeZero())

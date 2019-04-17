@@ -1,9 +1,6 @@
 os.loadAPI("transformation")
 
-t = transformation.newTransform()
-
-
-function lineMotionDoWhile(x, func)
+function lineMotionDoWhile(t, x, func)
     for xI = 0, x do
         --- Do action
         local b = func()
@@ -15,7 +12,7 @@ function lineMotionDoWhile(x, func)
         end
 
         --- Move forward
-        t = transformation.forward(t)
+        transformation.forward(t)
         
         --- Cannot move forward
         if t.ret == false then
