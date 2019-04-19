@@ -10,7 +10,7 @@ This repository is a collection of API functions for Computercraft's Turtle prog
 
 You only need to have `ComputerCraft 1.75` installed (With minecraft as well of course)
 
-If you want to get up and running quickly you can use my pastebin. Place a Turtle and type into the shell:
+If you want to get up and running quickly you can use my [pastebin](https://pastebin.com/xnd08s82). Place a Turtle and type into the shell:
 
 ```
 pastebin get xnd08s82 update
