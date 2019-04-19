@@ -8,7 +8,10 @@ modules['transformation'] = "HVMqpjrT"
 modules['room'] = "7AvQUPqY"
 modules['downminer'] = "X6GPgYFK"
 modules['dump'] = "WP2tv1t5"
+modules['stack'] = "zgYztk42"
 modules['test'] = "PLdr2YHf"
+modules['ore_worthy'] = "BHV9MseC"
+modules['scanbranchminer'] = "SiuW9VWV"
 
 print("Patching modules...")
 

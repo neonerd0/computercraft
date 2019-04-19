@@ -29,7 +29,13 @@ end
 
 os.loadAPI("dump")
 os.loadAPI("transformation")
+os.loadAPI("scanbranchminer")
+os.loadAPI("stack")
+
 t = transformation.newTransform()
+position_stack = stack.newStack()
+forward_stack = stack.newStack()
+worthy_ores = scanbranchminer.loadWorthyOres()
 
 
 function try_dig()
@@ -62,7 +68,7 @@ end
 
 function dig_col()
   while move_down() do
-    crosswise_check()
+    scanbranchminer.scanAllStart(t, position_stack, forward_stack, worthy_ores)
   end
   while t.position.y < 0 do
     turtle.digUp()
@@ -74,7 +80,7 @@ end
 function deposit()
   transformation.gotoPosition(t, vector.makeZero())
   transformation.face(t, vector.make(0,0,-1))
-  dump.tagged_dump_1234()
+  dump.dump_all()
 end
 
 

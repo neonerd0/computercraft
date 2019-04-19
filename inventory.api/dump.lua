@@ -16,3 +16,11 @@ function tagged_dump_1234()
         turtle.drop()
     end
 end
+
+
+function dump_all()
+    for i = 1, 16 do
+        turtle.select(i)
+        turtle.drop()
+    end
+end
