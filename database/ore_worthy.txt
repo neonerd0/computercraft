@@ -21,3 +21,6 @@ Thaumcraft:blockCustomOre
 BiomesOPlenty:gemOre
 appliedenergistics2:tile.OreQuartz
 appliedenergistics2:tile.OreQuartzCharged
+qCraft:quantumore
+qCraft:quantumoreglowing
+TConstruct:SearedBrick
