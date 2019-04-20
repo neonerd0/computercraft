@@ -62,7 +62,9 @@ end
 
 
 function up()
+    sleep(0.6)
     while turtle.detectUp() do
+        sleep(0.6)
         turtle.digUp()
     end
     transformation.up(input_table.t)
@@ -78,7 +80,7 @@ end
 
 
 --- Dig until the turtle can move
-function digGoto(pos)
+function digGoto(t, pos)
     transformation.gotoPosition(t, pos)
     while t.ret == false do
         --TODO: Find out which direction goto is trying to move

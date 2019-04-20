@@ -69,7 +69,8 @@ function gotoPosition(transform, target)
         end
     end
 
-    return transform.ret
+    transform.ret = true
+    return true
 end
 
 
