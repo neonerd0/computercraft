@@ -12,6 +12,7 @@ modules['stack'] = "zgYztk42"
 modules['test'] = "PLdr2YHf"
 modules['ore_worthy'] = "BHV9MseC"
 modules['scanbranchminer'] = "SiuW9VWV"
+modules['inspect'] = "HJ6ttxpt"
 
 print("Patching modules...")
 

@@ -31,11 +31,26 @@ os.loadAPI("dump")
 os.loadAPI("transformation")
 os.loadAPI("scanbranchminer")
 os.loadAPI("stack")
+os.loadAPI("inventory")
 
 t = transformation.newTransform()
 position_stack = stack.newStack()
 forward_stack = stack.newStack()
 worthy_ores = scanbranchminer.loadWorthyOres()
+
+worthless_ore = "minecraft:cobblestone"
+
+
+function select_worthless()
+  inventory.sort()
+  for i = 1, 16 do
+    d = turtle.getItemDetail(i)
+    if d ~= nil and d.name == worthless_ore then
+      turtle.select(i)
+      return
+    end
+  end
+end
 
 
 function try_dig()
@@ -105,7 +120,7 @@ function run()
       transformation.gotoPosition(t, topV)
 
       --- Cover the hole
-      turtle.select(1)
+      select_worthless()
       turtle.placeDown()
 
       --- Deposite ores
