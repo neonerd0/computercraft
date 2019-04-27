@@ -9,9 +9,6 @@ IC2:blockOreCopper
 IC2:blockOreTin
 IC2:blockOreLead
 IC2:blockOreUran
-magicalcrops:RubyCrop
-magicalcrops:SapphireCrop
-magicalcrops:SilverCrop
 denseores:block0
 denseores:block1
 ThermalFoundation:Ore

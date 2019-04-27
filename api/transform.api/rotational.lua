@@ -1,5 +1,7 @@
 os.loadAPI('vector')
 
+
+
 function turnLeft(currentTransform)
     turtle.turnLeft()
     return updateTurnIndex(currentTransform, -1)
@@ -45,19 +47,58 @@ function rotationIndexToForwardVec(currentTurnIndex)
     return turnIndexToAxis[currentTurnIndex]
 end
 
+
+function forwardVecToRotationIndex(axis)
+    local axisToRotationIndex = {}
+    -- Forward
+    axisToRotationIndex[vector.make(0,0,1)] = 0
+    -- Left
+    axisToRotationIndex[vector.make(-1,0,0)] = -1
+    -- Right
+    axisToRotationIndex[vector.make(1,0,0)] = 1
+    -- Back
+    axisToRotationIndex[vector.make(0,0,-1)] = 2
+
+    return axisToRotationIndex[axis]
+end
+
+
 function faceAxis(transform, axis)
     --- axis must be unit length
     local len = math.abs(axis.x) + math.abs(axis.z)
     if len ~= 1 then
         print("axis is not well defined!")
         transform.ret = false
-        return transform
+        return false
     end
 
-    while not vector.equalDirection(transform.forward, axis) do
-        transform = turnLeft(transform)
+    if axis.y ~= 0 then
+        print("Cannot handle face Y axis values, turtle can only turn left/right!")
+        transform.ret = false
+        return false
     end
+
+    -- To-From lookup table for rotation
+    func = {}
+    func[0] = nil
+    func[-4] = nil
+    func[4] = nil
+    func[-1] = turnRight
+    func[3] = turnRight
+    func[-2] = turnAround
+    func[2] = turnAround
+    func[1] = turnLeft
+    func[-3] = turnLeft
+    
+    d = transform.rotation - forwardVecToRotationIndex(axis)
+    turn = func[d]
+    if turn ~= nil then
+        turn(transform)
+    end
+    -- while not vector.equalDirection(transform.forward, axis) do
+    --     transform = turnLeft(transform)
+    -- end
 
     transform.ret = true
-    return transform
+    return true
 end

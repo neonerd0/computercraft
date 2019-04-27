@@ -122,6 +122,7 @@ function run()
       --- Cover the hole
       select_worthless()
       turtle.placeDown()
+      turtle.placeUp()
 
       --- Deposite ores
       deposit()
