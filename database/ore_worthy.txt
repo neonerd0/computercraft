@@ -25,3 +25,4 @@ appliedenergistics2:tile.OreQuartzCharged
 qCraft:quantumore
 qCraft:quantumoreglowing
 TConstruct:SearedBrick
+BigReactors:YelloriteOre
