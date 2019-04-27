@@ -50,16 +50,24 @@ end
 
 x = x - 1
 z = z - 1
+--if z == 0 then
+  --z = 1
+--end
+--
 y = y - 1
+--if y == 0 then
+ -- y = 1
+--end
 
 turnLeft = transformation.turnLeft
 turnRight = transformation.turnRight
 
 for yI = 0, y do
   for zI = 0, z do
-    zy = zI + yI
+
     turn = turnLeft
-    if zy % 2 == 0 then
+    count = (yI * z) + zI
+    if count % 2 == 0 then
       turn = turnRight
     end
 

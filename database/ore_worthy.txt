@@ -5,6 +5,7 @@ minecraft:redstone_ore
 minecraft:coal_ore
 minecraft:emerald_ore
 minecraft:lapis_ore
+minecraft:obsidian
 IC2:blockOreCopper
 IC2:blockOreTin
 IC2:blockOreLead
@@ -21,3 +22,4 @@ appliedenergistics2:tile.OreQuartzCharged
 qCraft:quantumore
 qCraft:quantumoreglowing
 TConstruct:SearedBrick
+BigReactors:YelloriteOre
