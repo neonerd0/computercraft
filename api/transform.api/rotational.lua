@@ -51,15 +51,15 @@ end
 function forwardVecToRotationIndex(axis)
     local axisToRotationIndex = {}
     -- Forward
-    axisToRotationIndex[vector.make(0,0,1)] = 0
+    axisToRotationIndex[vector.toString(vector.make(0,0,1))] = 0
     -- Left
-    axisToRotationIndex[vector.make(-1,0,0)] = -1
+    axisToRotationIndex[vector.toString(vector.make(-1,0,0))] = -1
     -- Right
-    axisToRotationIndex[vector.make(1,0,0)] = 1
+    axisToRotationIndex[vector.toString(vector.make(1,0,0))] = 1
     -- Back
-    axisToRotationIndex[vector.make(0,0,-1)] = 2
+    axisToRotationIndex[vector.toString(vector.make(0,0,-1))] = 2
 
-    return axisToRotationIndex[axis]
+    return axisToRotationIndex[vector.toString(axis)]
 end
 
 
@@ -90,14 +90,13 @@ function faceAxis(transform, axis)
     func[1] = turnLeft
     func[-3] = turnLeft
     
+    
+
     d = transform.rotation - forwardVecToRotationIndex(axis)
     turn = func[d]
     if turn ~= nil then
         turn(transform)
     end
-    -- while not vector.equalDirection(transform.forward, axis) do
-    --     transform = turnLeft(transform)
-    -- end
 
     transform.ret = true
     return true

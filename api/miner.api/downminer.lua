@@ -42,7 +42,7 @@ worthless_ore = "minecraft:cobblestone"
 
 
 function select_worthless()
-  inventory.sort()
+  --inventory.sort()
   for i = 1, 16 do
     d = turtle.getItemDetail(i)
     if d ~= nil and d.name == worthless_ore then
@@ -95,7 +95,23 @@ end
 function deposit()
   transformation.gotoPosition(t, vector.makeZero())
   transformation.face(t, vector.make(0,0,-1))
-  dump.dump_all()
+  dump_loot()
+end
+
+
+function dump_loot()
+  --- Dump all but 1 worthless item
+  for i = 1, 16 do
+      turtle.select(i)
+      d = turtle.getItemDetail(i)
+      if d then
+        if d.name == worthless_ore then
+          turtle.drop(d.c - 1)
+        else
+          turtle.drop()
+        end
+      end
+  end
 end
 
 
@@ -110,6 +126,10 @@ function run()
       local v = vector.make(_x, 0, _z)
       transformation.gotoPosition(t, v)
 
+      --- Place marker above
+      select_worthless()
+      turtle.placeUp()
+
       --- Dig a hole
       dig_col()
 
@@ -121,9 +141,7 @@ function run()
 
       --- Cover the hole
       select_worthless()
-      turtle.placeUp()
       turtle.placeDown()
-      turtle.placeUp()
 
       --- Deposite ores
       deposit()
