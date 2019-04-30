@@ -106,7 +106,7 @@ function dump_loot()
       d = turtle.getItemDetail(i)
       if d then
         if d.name == worthless_ore then
-          turtle.drop(d.c - 1)
+          turtle.drop(d.count - 1)
         else
           turtle.drop()
         end

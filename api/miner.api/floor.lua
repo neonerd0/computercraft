@@ -1,6 +1,6 @@
 local tArgs = {...}
 if #tArgs ~= 2 then
-  print("Requires length, width")
+  print("Requires width, length")
   return
 end
  
@@ -20,9 +20,21 @@ end
 --- Load API
 os.loadAPI("move")
 os.loadAPI("inventory")
+os.loadAPI("transformation")
 
-if not move.hasEnoughFuel(x, y, 0) then
-    print("Not enough fuel for floor size")
+t = transformation.newTransform()
+
+function enoughFuel(width, length) 
+  total = width * length
+  if total >= turtle.getFuelLevel() then
+    print("Not enough fuel for floor size!")
+    print(turtle.getFuelLevel(), " level but requires ", total, " fuel!")
+    return false
+  end
+  return true
+end
+
+if not enoughFuel(x, y) then
     return
 end
 
@@ -45,13 +57,17 @@ function tryPlaceAnyDown()
 end
 
 --- Build the floor
-turtle.forward()
-local b = move.rectMotionDoWhile(x, y, tryPlaceAnyDown)
-if b then
+transformation.forward(t)
+local b = move.rectMotionDoWhile(t, x, y, tryPlaceAnyDown)
+if b == true then
     print("Success!")
-else
+elseif b == false then
     print("Failure!")
+else
+    print("undefined!")
 end
+
+transformation.gotoPosition(t, vector.makeZero())
 
 print("Fuel remaining:")
 print(turtle.getFuelLevel());
