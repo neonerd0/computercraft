@@ -14,6 +14,10 @@ modules['ore_worthy'] = "BHV9MseC"
 modules['scanbranchminer'] = "SiuW9VWV"
 modules['inspect'] = "HJ6ttxpt"
 modules['scan'] = "qWmbgEkr"
+modules['chest_string_type'] = "KbTM29Sh"
+modules['chests'] = "ykC5q8Bh"
+modules['craft'] = "Az5w4aNS"
+modules['inspectchest'] = "ejT1qPv8"
 
 print("Patching modules...")
 

@@ -1,0 +1,68 @@
+minecraft:stick 0 stick
+6 minecraft:planks 0 10 minecraft:planks 0
+minecraft:planks 0 oakplank
+13 minecraft:log 0
+minecraft:stone_pickaxe 0 stonepick
+5 minecraft:cobblestone 0 6 minecraft:cobblestone 0 7 minecraft:cobblestone 0 10 minecraft:stick 0 14 minecraft:stick 0
+minecraft:planks 0 planks
+9 minecraft:log 0
+minecraft:crafting_table 0 -
+1 minecraft:planks 0 2 minecraft:planks 0 5 minecraft:planks 0 6 minecraft:planks 0
+minecraft:crafting_table 0 -
+6 minecraft:planks 0 7 minecraft:planks 0 10 minecraft:planks 0 11 minecraft:planks 0
+minecraft:stone_stairs 0 -
+5 minecraft:cobblestone 0 9 minecraft:cobblestone 0 10 minecraft:cobblestone 0 13 minecraft:cobblestone 0 14 minecraft:cobblestone 0 15 minecraft:cobblestone 0
+ThermalFoundation:material 129 tin_gear
+2 ThermalFoundation:material 65 5 ThermalFoundation:material 65 6 minecraft:iron_ingot 0 7 ThermalFoundation:material 65 10 ThermalFoundation:material 65
+ThermalExpansion:Frame 0 machine_frame_basic
+1 minecraft:iron_ingot 0 2 minecraft:glass 0 3 minecraft:iron_ingot 0 5 minecraft:glass 0 6 ThermalFoundation:material 129 7 minecraft:glass 0 9 minecraft:iron_ingot 0 10 minecraft:glass 0 11 minecraft:iron_ingot 0
+minecraft:piston 0 piston
+1 minecraft:planks 0 2 minecraft:planks 0 3 minecraft:planks 0 5 minecraft:cobblestone 0 6 minecraft:iron_ingot 0 7 minecraft:cobblestone 0 9 minecraft:cobblestone 0 10 minecraft:redstone 0 11 minecraft:cobblestone 0
+ThermalExpansion:material 1 redstone_reception_coil
+3 minecraft:redstone 0 6 minecraft:gold_ingot 0 9 minecraft:redstone 0
+BuildCraft|Core:woodenGearItem 0 wood_gear
+2 minecraft:stick 0 5 minecraft:stick 0 7 minecraft:stick 0 10 minecraft:stick 0
+BuildCraft|Core:stoneGearItem 0 stone_gear
+2 minecraft:cobblestone 0 5 minecraft:cobblestone 0 6 BuildCraft|Core:woodenGearItem 0 7 minecraft:cobblestone 0 10 minecraft:cobblestone 0
+ThermalFoundation:material 128 copper_gear
+2 ThermalFoundation:material 64 5 ThermalFoundation:material 64 6 minecraft:iron_ingot 0 7 ThermalFoundation:material 64 10 ThermalFoundation:material 64
+ThermalExpansion:Machine 1 pulverizer
+2 minecraft:piston 0 5 minecraft:flint 0 6 ThermalExpansion:Frame 0 7 minecraft:flint 0 9 ThermalFoundation:material 128 10 ThermalExpansion:material 1 11 ThermalFoundation:material 128
+ThermalFoundation:material 13 gold_gear
+2 minecraft:gold_ingot 0 5 minecraft:gold_ingot 0 6 minecraft:iron_ingot 0 7 minecraft:gold_ingot 0 10 minecraft:gold_ingot 0
+BuildCraft|Core:diamondGearItem 0 diamond_gear
+2 minecraft:diamond 0 5 minecraft:diamond 0 6 ThermalFoundation:material 13 7 minecraft:diamond 0 10 minecraft:diamond 0
+ThermalFoundation:material 12 iron_gear
+2 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 minecraft:iron_ingot 0 7 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0
+minecraft:diamond_pickaxe 0 diamond_pickaxe
+1 minecraft:diamond 0 2 minecraft:diamond 0 3 minecraft:diamond 0 6 minecraft:stick 0 10 minecraft:stick 0
+BuildCraft|Builders:machineBlock 0 quarry
+1 ThermalFoundation:material 12 2 minecraft:redstone 0 3 ThermalFoundation:material 12 5 ThermalFoundation:material 13 6 ThermalFoundation:material 12 7 ThermalFoundation:material 13 9 BuildCraft|Core:diamondGearItem 0 10 minecraft:diamond_pickaxe 0 11 BuildCraft|Core:diamondGearItem 0
+minecraft:chest 0 chest
+1 minecraft:planks 0 2 minecraft:planks 0 3 minecraft:planks 0 5 minecraft:planks 0 7 minecraft:planks 0 9 minecraft:planks 0 10 minecraft:planks 0 11 minecraft:planks 0
+minecraft:wooden_slab 0 slab
+1 minecraft:planks 0 2 minecraft:planks 0 3 minecraft:planks 0
+JABBA:barrel 0 barrel
+1 minecraft:log 0 2 minecraft:wooden_slab 0 3 minecraft:log 0 5 minecraft:log 0 6 minecraft:chest 0 7 minecraft:log 0 9 minecraft:log 0 10 minecraft:log 0 11 minecraft:log 0
+IC2:blockCrop 0 fench
+1 minecraft:stick 0 3 minecraft:stick 0 5 minecraft:stick 0 7 minecraft:stick 0
+minecraft:fence 0 fence
+1 minecraft:stick 0 2 minecraft:stick 0 3 minecraft:stick 0 5 minecraft:stick 0 6 minecraft:stick 0 7 minecraft:stick 0
+JABBA:upgradeStructural 0 barrel_slot_1
+1 minecraft:fence 0 2 minecraft:planks 0 3 minecraft:fence 0 5 minecraft:planks 0 7 minecraft:planks 0 9 minecraft:fence 0 10 minecraft:planks 0 11 minecraft:fence 0
+JABBA:upgradeStructural 1 barrel_slot_2
+1 minecraft:fence 0 2 minecraft:iron_ingot 0 3 minecraft:fence 0 5 minecraft:iron_ingot 0 7 minecraft:iron_ingot 0 9 minecraft:fence 0 10 minecraft:iron_ingot 0 11 minecraft:fence 0
+JABBA:upgradeCore 0 barrel_upgrade_1
+2 minecraft:piston 0 6 JABBA:barrel 0 10 minecraft:piston 0
+JABBA:upgradeCore 4 barrel_upgrade_3
+1 JABBA:upgradeCore 0 2 JABBA:upgradeCore 0 5 JABBA:upgradeCore 0
+ThermalDynamics:ThermalDynamics_0 0 fluxduct
+1 minecraft:redstone 0 2 minecraft:redstone 0 3 minecraft:redstone 0 5 ThermalFoundation:material 67 6 minecraft:glass 0 7 ThermalFoundation:material 67 9 minecraft:redstone 0 10 minecraft:redstone 0 11 minecraft:redstone 0
+minecraft:glass_pane 0 glass_pane
+1 minecraft:glass 0 2 minecraft:glass 0 3 minecraft:glass 0 5 minecraft:glass 0 6 minecraft:glass 0 7 minecraft:glass 0
+ComputerCraft:CC-Computer 0 computer
+1 minecraft:stone 0 2 minecraft:stone 0 3 minecraft:stone 0 5 minecraft:stone 0 6 minecraft:redstone 0 7 minecraft:stone 0 9 minecraft:stone 0 10 minecraft:glass_pane 0 11 minecraft:stone 0
+ComputerCraft:CC-Turtle 0 turtle
+1 minecraft:iron_ingot 0 2 minecraft:iron_ingot 0 3 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 ComputerCraft:CC-Computer 0 7 minecraft:iron_ingot 0 9 minecraft:iron_ingot 0 10 minecraft:chest 0 11 minecraft:iron_ingot 0
+ComputerCraft:CC-TurtleExpanded 0 mining_turtle
+5 minecraft:diamond_pickaxe 0 6 ComputerCraft:CC-Turtle 0

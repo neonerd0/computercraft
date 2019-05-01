@@ -24,3 +24,19 @@ function dump_all()
         turtle.drop()
     end
 end
+
+
+function dump_all_up()
+    for i = 1, 16 do
+        turtle.select(i)
+        turtle.dropUp()
+    end
+end
+
+
+function dump_all_down()
+    for i = 1, 16 do
+        turtle.select(i)
+        turtle.dropDown()
+    end
+end

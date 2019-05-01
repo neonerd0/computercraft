@@ -1,0 +1,7 @@
+chest
+iron
+copper
+silver
+gold
+diamond
+ender_chest
