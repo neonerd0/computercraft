@@ -2,10 +2,16 @@ minecraft:iron_ore
 minecraft:diamond_ore
 minecraft:gold_ore
 minecraft:redstone_ore
+minecraft:lit_redstone_ore
 minecraft:coal_ore
 minecraft:emerald_ore
 minecraft:lapis_ore
 minecraft:obsidian
+minecraft:clay
+minecraft:stained_hardened_clay
+minecraft:glowstone
+NetherOres:tile.netherores.ore.0
+NetherOres:tile.netherores.ore.1
 IC2:blockOreCopper
 IC2:blockOreTin
 IC2:blockOreLead
