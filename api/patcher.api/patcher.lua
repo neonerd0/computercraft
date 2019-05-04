@@ -18,6 +18,7 @@ modules['chest_string_type'] = "KbTM29Sh"
 modules['chests'] = "ykC5q8Bh"
 modules['craft'] = "Az5w4aNS"
 modules['inspectchest'] = "ejT1qPv8"
+modules['around'] = "sdQjccSX"
 
 print("Patching modules...")
 
