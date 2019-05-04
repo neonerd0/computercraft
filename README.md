@@ -8,7 +8,15 @@ This repository is a collection of API functions for Computercraft's Turtle prog
 
 ## Installation & Dependencies
 
-You only need to have `ComputerCraft 1.75` installed (With minecraft as well of course)
+You will need the following mods:
+
+- Computercraft 1.75
+- OpenComputers 1.7.3 (And OpenComputers Core 1.7.3)
+- OpenPeripheralAddon 0.6
+- OpenPeripheralCore 1.4
+- OpenPeripheralIntegration 0.6
+
+And minecraft itself.
 
 If you want to get up and running quickly you can use my [pastebin](https://pastebin.com/xnd08s82). Place a Turtle and type into the shell:
 
@@ -28,6 +36,11 @@ Simply fix all the patebin url hashes to point to those which you have uploaded.
 An alternative is to use `http api` to wget/pull the files directly off git.
 
 # WIP Stuff
+### guardian.lua
+- Follows the player around
+- Can assign patrol routes
+- Attacks mobs that are nearby
+
 ### [downminer.lua](api/miner.api/downminer.lua)
 - Ender IO chest support
 - Refuel support
