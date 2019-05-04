@@ -66,3 +66,11 @@ ComputerCraft:CC-Turtle 0 turtle
 1 minecraft:iron_ingot 0 2 minecraft:iron_ingot 0 3 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 ComputerCraft:CC-Computer 0 7 minecraft:iron_ingot 0 9 minecraft:iron_ingot 0 10 minecraft:chest 0 11 minecraft:iron_ingot 0
 ComputerCraft:CC-TurtleExpanded 0 mining_turtle
 5 minecraft:diamond_pickaxe 0 6 ComputerCraft:CC-Turtle 0
+minecraft:golden_apple 0 golden_apple
+1 minecraft:gold_ingot 0 2 minecraft:gold_ingot 0 3 minecraft:gold_ingot 0 5 minecraft:gold_ingot 0 6 minecraft:apple 0 7 minecraft:gold_ingot 0 9 minecraft:gold_ingot 0 10 minecraft:gold_ingot 0 11 minecraft:gold_ingot 0
+minecraft:stone_slab 3 cobblestone_slab
+1 minecraft:cobblestone 0 2 minecraft:cobblestone 0 3 minecraft:cobblestone 0
+OpenPeripheral:sensor 0 sensor
+1 minecraft:obsidian 0 2 minecraft:obsidian 0 3 minecraft:obsidian 0 6 minecraft:stick 0 9 minecraft:stone_slab 3 10 minecraft:stone_slab 3 11 minecraft:stone_slab 3
+ComputerCraft:CC-Peripheral 2 monitor
+1 minecraft:stone 0 2 minecraft:stone 0 3 minecraft:stone 0 5 minecraft:stone 0 6 minecraft:glass_pane 0 7 minecraft:stone 0 9 minecraft:stone 0 10 minecraft:stone 0 11 minecraft:stone 0
