@@ -74,3 +74,13 @@ OpenPeripheral:sensor 0 sensor
 1 minecraft:obsidian 0 2 minecraft:obsidian 0 3 minecraft:obsidian 0 6 minecraft:stick 0 9 minecraft:stone_slab 3 10 minecraft:stone_slab 3 11 minecraft:stone_slab 3
 ComputerCraft:CC-Peripheral 2 monitor
 1 minecraft:stone 0 2 minecraft:stone 0 3 minecraft:stone 0 5 minecraft:stone 0 6 minecraft:glass_pane 0 7 minecraft:stone 0 9 minecraft:stone 0 10 minecraft:stone 0 11 minecraft:stone 0
+minecraft:diamond_sword 0 diamond_sword
+2 minecraft:diamond 0 6 minecraft:diamond 0 10 minecraft:stick 0
+ComputerCraft:CC-Computer 16384 advanced_computer
+1 minecraft:gold_ingot 0 2 minecraft:gold_ingot 0 3 minecraft:gold_ingot 0 5 minecraft:gold_ingot 0 6 minecraft:redstone 0 7 minecraft:gold_ingot 0 9 minecraft:gold_ingot 0 10 minecraft:glass_pane 0 11 minecraft:gold_ingot 0
+ComputerCraft:CC-TurtleAdvanced 0 advanced_turtle
+1 minecraft:gold_ingot 0 2 minecraft:gold_ingot 0 3 minecraft:gold_ingot 0 5 minecraft:gold_ingot 0 6 ComputerCraft:CC-Computer 16384 7 minecraft:gold_ingot 0 9 minecraft:gold_ingot 0 10 minecraft:chest 0 11 minecraft:gold_ingot 0
+ComputerCraft:CC-TurtleAdvanced 0 advanced_melee_turtle
+6 ComputerCraft:CC-TurtleAdvanced 0 7 minecraft:diamond_sword 0
+ComputerCraft:CC-TurtleAdvanced 0 guardian
+5 OpenPeripheral:sensor 0 6 ComputerCraft:CC-TurtleAdvanced 0
