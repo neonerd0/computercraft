@@ -84,3 +84,153 @@ ComputerCraft:CC-TurtleAdvanced 0 advanced_melee_turtle
 6 ComputerCraft:CC-TurtleAdvanced 0 7 minecraft:diamond_sword 0
 ComputerCraft:CC-TurtleAdvanced 0 guardian
 5 OpenPeripheral:sensor 0 6 ComputerCraft:CC-TurtleAdvanced 0
+ThermalExpansion:capacitor 2 leadstone_flux_capacitor
+2 minecraft:redstone 0 5 ThermalFoundation:material 67 6 ThermalFoundation:material 64 7 ThermalFoundation:material 67 9 minecraft:redstone 0 10 Mekanism:OtherDust 3 11 minecraft:redstone 0
+simplyjetpacks:components 0 leather_strap
+5 minecraft:leather 0 6 minecraft:iron_ingot 0 7 minecraft:leather 0 9 minecraft:leather 0 10 minecraft:iron_ingot 0 11 minecraft:leather 0
+ThermalExpansion:material 2 redstone_transmission_coil
+3 minecraft:redstone 0 6 ThermalFoundation:material 66 9 minecraft:redstone 0
+ThermalExpansion:Dynamo 0 steam_dynamo
+2 ThermalExpansion:material 2 5 ThermalFoundation:material 128 6 ThermalFoundation:material 64 7 ThermalFoundation:material 128 9 ThermalFoundation:material 64 10 minecraft:redstone 0 11 ThermalFoundation:material 64
+simplyjetpacks:components 11 leadstone_thruster
+1 ThermalFoundation:material 67 2 ThermalExpansion:material 1 3 ThermalFoundation:material 67 5 ThermalDynamics:ThermalDynamics_0 0 6 ThermalExpansion:Dynamo 0 7 ThermalDynamics:ThermalDynamics_0 0 9 ThermalFoundation:material 67 10 minecraft:redstone 0 11 ThermalFoundation:material 67
+simplyjetpacks:jetpacks 1 leadstone_jetpack
+1 ThermalFoundation:material 67 2 ThermalExpansion:capacitor 2 3 ThermalFoundation:material 67 5 ThermalFoundation:material 67 6 simplyjetpacks:components 0 7 ThermalFoundation:material 67 9 simplyjetpacks:components 11 11 simplyjetpacks:components 11
+minecraft:string 0 string
+1 Natura:barleyFood 3 2 Natura:barleyFood 3 3 Natura:barleyFood 3
+appliedenergistics2:tile.BlockInscriber 0 inscriberae2
+1 minecraft:iron_ingot 0 2 minecraft:sticky_piston 0 3 minecraft:iron_ingot 0 5 appliedenergistics2:item.ItemMultiMaterial 7 7 minecraft:iron_ingot 0 9 minecraft:iron_ingot 0 10 minecraft:sticky_piston 0 11 minecraft:iron_ingot 0
+appliedenergistics2:tile.BlockSkyCompass 0 meteorite_compass_ae2
+2 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 appliedenergistics2:item.ItemMultiMaterial 1 7 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0
+powersuits:powerArmorComponent 0 wiring
+1 IC2:itemCable 2 2 minecraft:redstone 0 3 IC2:itemCable 2
+IC2:itemCable 13 tin_wire
+1 MineFactoryReloaded:rubber.bar 0 2 IC2:itemCable 10
+IC2:itemBatREDischarged 0 re_battery
+2 IC2:itemCable 13 5 IC2:itemCasing 1 6 minecraft:redstone 0 7 IC2:itemCasing 1 9 IC2:itemCasing 1 10 minecraft:redstone 0 11 IC2:itemCasing 1
+powersuits:powerArmorComponent 5 lv_capacitor
+1 powersuits:powerArmorComponent 0 2 IC2:itemBatREDischarged 0 3 powersuits:powerArmorComponent 0 5 powersuits:powerArmorComponent 0 7 powersuits:powerArmorComponent 0
+BiomesOPlenty:misc 7 green_dye
+1 BiomesOPlenty:moss 0
+powersuits:powerArmorComponent 14 control_circuit
+1 powersuits:powerArmorComponent 0 2 BiomesOPlenty:misc 7 3 minecraft:gold_ingot 0 5 minecraft:redstone 0 6 Mekanism:ControlCircuit 0 7 BiomesOPlenty:misc 7 9 minecraft:gold_ingot 0 10 minecraft:redstone 0 11 powersuits:powerArmorComponent 0
+powersuits:powerArmorComponent 12 hologram_emitter
+1 minecraft:glowstone_dust 0 2 minecraft:glass 0 3 BiomesOPlenty:misc 7 5 minecraft:glass 0 6 Mekanism:ControlCircuit 0 7 minecraft:glass 0 9 Natura:barleyFood 8 10 minecraft:glass 0 11 minecraft:dye 1
+appliedenergistics2:item.ItemMultiPart 140 quartz_fibre
+1 minecraft:glass 0 2 minecraft:glass 0 3 minecraft:glass 0 5 appliedenergistics2:item.ItemMultiMaterial 2 6 appliedenergistics2:item.ItemMultiMaterial 2 7 appliedenergistics2:item.ItemMultiMaterial 2 9 minecraft:glass 0 10 minecraft:glass 0 11 minecraft:glass 0
+appliedenergistics2:item.ItemMultiPart 16 me_glass_cable
+1 appliedenergistics2:item.ItemMultiPart 140 2 appliedenergistics2:item.ItemMultiMaterial 7 3 appliedenergistics2:item.ItemMultiMaterial 7
+appliedenergistics2:tile.BlockFluix 0 fluix_block
+1 appliedenergistics2:item.ItemMultiMaterial 7 2 appliedenergistics2:item.ItemMultiMaterial 7 5 appliedenergistics2:item.ItemMultiMaterial 7 6 appliedenergistics2:item.ItemMultiMaterial 7
+appliedenergistics2:tile.BlockQuartzGlass 0 quartz_glass
+1 appliedenergistics2:item.ItemMultiMaterial 2 2 minecraft:glass 0 3 appliedenergistics2:item.ItemMultiMaterial 2 5 minecraft:glass 0 6 appliedenergistics2:item.ItemMultiMaterial 2 7 minecraft:glass 0 9 appliedenergistics2:item.ItemMultiMaterial 2 10 minecraft:glass 0 11 appliedenergistics2:item.ItemMultiMaterial 2
+appliedenergistics2:tile.BlockQuartzGrowthAccelerator 0 growth_accelerator
+1 minecraft:iron_ingot 0 2 appliedenergistics2:item.ItemMultiPart 16 3 minecraft:iron_ingot 0 5 appliedenergistics2:tile.BlockQuartzGlass 0 6 appliedenergistics2:tile.BlockFluix 0 7 appliedenergistics2:tile.BlockQuartzGlass 0 9 minecraft:iron_ingot 0 10 appliedenergistics2:item.ItemMultiPart 16 11 minecraft:iron_ingot 0
+MineFactoryReloaded:ruler 0 ruler
+1 MineFactoryReloaded:plastic.sheet 0 5 minecraft:paper 0 9 MineFactoryReloaded:plastic.sheet 0
+BigReactors:BRReactorPart 0 reactor_casing
+1 minecraft:iron_ingot 0 2 BigReactors:BRIngot 2 3 minecraft:iron_ingot 0 5 BigReactors:BRIngot 2 6 BigReactors:BRIngot 0 7 BigReactors:BRIngot 2 9 minecraft:iron_ingot 0 10 BigReactors:BRIngot 2 11 minecraft:iron_ingot 0
+Mekanism:GasTank 0 gas_tank
+1 minecraft:redstone 0 2 Mekanism:Ingot 1 3 minecraft:redstone 0 5 Mekanism:Ingot 1 7 Mekanism:Ingot 1 9 minecraft:redstone 0 10 Mekanism:Ingot 1 11 minecraft:redstone 0
+Mekanism:GasTank 0 advanced_gas_tank
+1 Mekanism:EnrichedAlloy 0 2 Mekanism:Ingot 1 3 Mekanism:EnrichedAlloy 0 5 Mekanism:Ingot 1 6 Mekanism:GasTank 0 7 Mekanism:Ingot 1 9 Mekanism:EnrichedAlloy 0 10 Mekanism:Ingot 1 11 Mekanism:EnrichedAlloy 0
+BigReactors:BRReactorPart 1 reactor_controller
+1 BigReactors:BRReactorPart 0 3 BigReactors:BRReactorPart 0 5 BigReactors:BRIngot 0 6 minecraft:diamond 0 7 BigReactors:BRIngot 0 9 BigReactors:BRReactorPart 0 10 minecraft:redstone 0 11 BigReactors:BRReactorPart 0
+BigReactors:BRReactorPart 2 reactor_control_rod
+1 BigReactors:BRReactorPart 0 2 BigReactors:BRIngot 2 3 BigReactors:BRReactorPart 0 5 BigReactors:BRIngot 2 6 minecraft:redstone 0 7 BigReactors:BRIngot 2 9 BigReactors:BRReactorPart 0 10 BigReactors:BRIngot 0 11 BigReactors:BRReactorPart 0
+BigReactors:BRReactorPart 4 reactor_access_port
+1 BigReactors:BRReactorPart 0 3 BigReactors:BRReactorPart 0 6 minecraft:chest 0 9 BigReactors:BRReactorPart 0 10 minecraft:piston 0 11 BigReactors:BRReactorPart 0
+minecraft:iron_bars 0 iron_bars
+1 minecraft:iron_ingot 0 2 minecraft:iron_ingot 0 3 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 minecraft:iron_ingot 0 7 minecraft:iron_ingot 0
+minecraft:stone_slab 3 cobblestone_slab
+1 minecraft:cobblestone 0 2 minecraft:cobblestone 0 3 minecraft:cobblestone 0
+OpenBlocks:fan 0 fan
+1 minecraft:iron_bars 0 5 minecraft:iron_ingot 0 9 minecraft:stone_slab 3
+ExtraUtilities:decorativeBlock1 9 sandy_glass
+1 minecraft:glass 0 2 minecraft:sand 0 5 minecraft:sand 0 6 minecraft:glass 0
+MineFactoryReloaded:conveyor 16 conveyor_belt
+1 MineFactoryReloaded:rubber.bar 0 2 MineFactoryReloaded:rubber.bar 0 3 MineFactoryReloaded:rubber.bar 0 5 minecraft:redstone 0 6 minecraft:iron_ingot 0 7 minecraft:redstone 0
+BigReactors:BRReactorPart 3 reactor_power_tap
+1 BigReactors:BRReactorPart 0 2 minecraft:redstone 0 3 BigReactors:BRReactorPart 0 5 minecraft:redstone 0 7 minecraft:redstone 0 9 BigReactors:BRReactorPart 0 10 minecraft:redstone 0 11 BigReactors:BRReactorPart 0
+minecraft:furnace 0 furnace
+1 minecraft:cobblestone 0 2 minecraft:cobblestone 0 3 minecraft:cobblestone 0 5 minecraft:cobblestone 0 7 minecraft:cobblestone 0 9 minecraft:cobblestone 0 10 minecraft:cobblestone 0 11 minecraft:cobblestone 0
+BigReactors:BRMetalBlock 2 graphite_block
+1 BigReactors:BRIngot 2 2 BigReactors:BRIngot 2 3 BigReactors:BRIngot 2 5 BigReactors:BRIngot 2 6 BigReactors:BRIngot 2 7 BigReactors:BRIngot 2 9 BigReactors:BRIngot 2 10 BigReactors:BRIngot 2 11 BigReactors:BRIngot 2
+BigReactors:YelloriumFuelRod 0 yellorium_fuel_rod
+1 minecraft:iron_ingot 0 2 BigReactors:BRIngot 2 3 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 BigReactors:BRIngot 0 7 minecraft:iron_ingot 0 9 minecraft:iron_ingot 0 10 BigReactors:BRIngot 2 11 minecraft:iron_ingot 0
+BuildCraft|Factory:tankBlock 0 tank
+1 minecraft:glass 0 2 minecraft:glass 0 3 minecraft:glass 0 5 minecraft:glass 0 7 minecraft:glass 0 9 minecraft:glass 0 10 minecraft:glass 0 11 minecraft:glass 0
+BuildCraft|Factory:floodGateBlock 0 flood_gate
+1 minecraft:iron_ingot 0 2 ThermalFoundation:material 12 3 minecraft:iron_ingot 0 5 minecraft:iron_bars 0 6 BuildCraft|Factory:tankBlock 0 7 minecraft:iron_bars 0 9 minecraft:iron_ingot 0 10 minecraft:iron_bars 0 11 minecraft:iron_ingot 0
+minecraft:hopper 0 hopper
+1 minecraft:iron_ingot 0 3 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 minecraft:chest 0 7 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0
+IC2:itemFluidCell 0 universal_fluid_cell
+2 IC2:itemCasing 1 5 IC2:itemCasing 1 6 minecraft:glass_pane 0 7 IC2:itemCasing 1 10 IC2:itemCasing 1
+IC2:itemToolForgeHammer 0 forge_hammer
+1 minecraft:iron_ingot 0 2 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 minecraft:stick 0 7 minecraft:stick 0 9 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0
+ThermalDynamics:ThermalDynamics_16 1 fluiduct
+1 ThermalFoundation:material 64 2 ThermalFoundation:material 67 3 ThermalFoundation:material 64
+ThermalFoundation:tool.axeInvar 0 invar_axe
+2 ThermalFoundation:material 72 3 ThermalFoundation:material 72 6 minecraft:stick 0 7 ThermalFoundation:material 72 10 minecraft:stick 0
+MineFactoryReloaded:plastic.sheet 0 plastic_sheets
+1 MineFactoryReloaded:plastic.raw 0 2 MineFactoryReloaded:plastic.raw 0 5 MineFactoryReloaded:plastic.raw 0 6 MineFactoryReloaded:plastic.raw 0
+MineFactoryReloaded:machine.0 2 harvester
+1 MineFactoryReloaded:plastic.sheet 0 2 minecraft:shears 0 3 MineFactoryReloaded:plastic.sheet 0 5 ThermalFoundation:tool.axeInvar 0 6 ThermalExpansion:Frame 0 7 ThermalFoundation:tool.axeInvar 0 9 ThermalFoundation:material 13 10 ThermalExpansion:material 1 11 ThermalFoundation:material 13
+minecraft:shears 0 shears
+1 minecraft:iron_ingot 0 6 minecraft:iron_ingot 0
+minecraft:flower_pot 0 flower_pot
+1 minecraft:brick 0 3 minecraft:brick 0 6 minecraft:brick 0
+MineFactoryReloaded:machine.0 0 planter
+1 MineFactoryReloaded:plastic.sheet 0 2 minecraft:flower_pot 0 3 MineFactoryReloaded:plastic.sheet 0 5 minecraft:piston 0 6 ThermalExpansion:Frame 0 7 minecraft:piston 0 9 ThermalFoundation:material 128 10 ThermalExpansion:material 1 11 ThermalFoundation:material 128
+ThermalDynamics:ThermalDynamics_32 1 itemduct
+1 ThermalFoundation:material 65 2 ThermalFoundation:material 67 3 ThermalFoundation:material 65
+minecraft:bucket 0 bucket
+1 minecraft:iron_ingot 0 3 minecraft:iron_ingot 0 6 minecraft:iron_ingot 0
+ThermalExpansion:Machine 8 aqueous_accumalator
+2 minecraft:bucket 0 5 minecraft:glass 0 6 ThermalExpansion:Frame 0 7 minecraft:glass 0 9 ThermalFoundation:material 128 10 ThermalExpansion:material 0 11 ThermalFoundation:material 128
+BigReactors:BRDevice 0 cyanite_reprocessor
+1 BigReactors:BRReactorPart 0 2 minecraft:iron_ingot 0 3 BigReactors:BRReactorPart 0 5 minecraft:piston 0 6 BigReactors:YelloriumFuelRod 0 7 minecraft:piston 0 9 BigReactors:BRReactorPart 0 10 minecraft:redstone 0 11 BigReactors:BRReactorPart 0
+IronChest:BlockIronChest 0 iron_chest
+1 minecraft:iron_ingot 0 2 minecraft:iron_ingot 0 3 minecraft:iron_ingot 0 5 minecraft:iron_ingot 0 6 minecraft:chest 0 7 minecraft:iron_ingot 0 9 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0 11 minecraft:iron_ingot 0
+IronChest:BlockIronChest 1 gold_chest
+1 minecraft:gold_ingot 0 2 minecraft:gold_ingot 0 3 minecraft:gold_ingot 0 5 minecraft:gold_ingot 0 6 IronChest:BlockIronChest 0 7 minecraft:gold_ingot 0 9 minecraft:gold_ingot 0 10 minecraft:gold_ingot 0 11 minecraft:gold_ingot 0
+IronChest:BlockIronChest 2 diamond_chest
+1 minecraft:glass 0 2 minecraft:glass 0 3 minecraft:glass 0 5 minecraft:diamond 0 6 IronChest:BlockIronChest 1 7 minecraft:diamond 0 9 minecraft:glass 0 10 minecraft:glass 0 11 minecraft:glass 0
+minecraft:gold_nugget 0 gold_nugget
+1 minecraft:gold_ingot 0
+MineFactoryReloaded:upgrade.radius 3 upgrade_copper
+1 ThermalFoundation:material 64 2 ThermalFoundation:material 64 3 ThermalFoundation:material 64 5 MineFactoryReloaded:plastic.raw 0 6 MineFactoryReloaded:plastic.raw 0 7 MineFactoryReloaded:plastic.raw 0 9 minecraft:redstone 0 10 minecraft:gold_nugget 0 11 minecraft:redstone 0
+ThermalFoundation:material 136 invar_gear
+2 ThermalFoundation:material 72 5 ThermalFoundation:material 72 6 minecraft:iron_ingot 0 7 ThermalFoundation:material 72 10 ThermalFoundation:material 72
+ThermalExpansion:Machine 3 induction_smelter
+2 minecraft:bucket 0 5 ThermalFoundation:material 72 6 ThermalExpansion:Frame 0 7 ThermalFoundation:material 72 9 ThermalFoundation:material 136 10 ThermalExpansion:material 1 11 ThermalFoundation:material 136
+minecraft:glass_bottle 0 glass_bottle
+1 minecraft:glass 0 3 minecraft:glass 0 6 minecraft:glass 0
+ThermalFoundation:material 132 ferrous_gear
+2 ThermalFoundation:material 68 5 ThermalFoundation:material 68 6 minecraft:iron_ingot 0 7 ThermalFoundation:material 68 10 ThermalFoundation:material 68
+ThermalFoundation:material 132 ferrous_gear
+2 ThermalFoundation:material 68 5 ThermalFoundation:material 68 6 minecraft:iron_ingot 0 7 ThermalFoundation:material 68 10 ThermalFoundation:material 68
+MineFactoryReloaded:machine.0 4 fertilizer
+1 MineFactoryReloaded:plastic.sheet 0 2 minecraft:glass_bottle 0 3 MineFactoryReloaded:plastic.sheet 0 5 minecraft:leather 0 6 ThermalExpansion:Frame 0 7 minecraft:leather 0 9 ThermalFoundation:material 132 10 ThermalExpansion:material 1 11 ThermalFoundation:material 132
+MineFactoryReloaded:machine.2 0 laser_drill
+1 MineFactoryReloaded:plastic.sheet 0 2 ThermalExpansion:Light 0 3 MineFactoryReloaded:plastic.sheet 0 5 ThermalExpansion:material 1 6 ThermalExpansion:Light 0 7 ThermalExpansion:material 1 9 minecraft:diamond 0 10 ThermalExpansion:Glass 0 11 minecraft:diamond 0
+TConstruct:materials 19 iron_nugget
+1 minecraft:iron_ingot 0
+ThermalDynamics:servo 0 servo
+1 TConstruct:materials 19 2 minecraft:glass 0 3 TConstruct:materials 19 5 minecraft:iron_ingot 0 6 minecraft:redstone 0 7 minecraft:iron_ingot 0
+appliedenergistics2:item.ItemMultiPart 16 me_glass_cable
+1 appliedenergistics2:item.ItemMultiPart 140 2 appliedenergistics2:item.ItemMultiMaterial 7 3 appliedenergistics2:item.ItemMultiMaterial 7
+appliedenergistics2:tile.BlockDrive 0 me_drive
+1 minecraft:iron_ingot 0 2 appliedenergistics2:item.ItemMultiMaterial 24 3 minecraft:iron_ingot 0 5 appliedenergistics2:item.ItemMultiPart 16 7 appliedenergistics2:item.ItemMultiPart 16 9 minecraft:iron_ingot 0 10 appliedenergistics2:item.ItemMultiMaterial 24 11 minecraft:iron_ingot 0
+appliedenergistics2:item.ItemMultiMaterial 35 1k_me_sorage_componen
+1 minecraft:redstone 0 2 appliedenergistics2:item.ItemMultiMaterial 0 3 minecraft:redstone 0 5 appliedenergistics2:item.ItemMultiMaterial 0 6 appliedenergistics2:item.ItemMultiMaterial 22 7 appliedenergistics2:item.ItemMultiMaterial 0 9 minecraft:redstone 0 10 appliedenergistics2:item.ItemMultiMaterial 0 11 minecraft:redstone 0
+appliedenergistics2:item.ItemMultiPart 140 quartz_fibre
+1 minecraft:glass 0 2 minecraft:glass 0 3 minecraft:glass 0 5 appliedenergistics2:item.ItemMultiMaterial 2 6 appliedenergistics2:item.ItemMultiMaterial 2 7 appliedenergistics2:item.ItemMultiMaterial 2 9 minecraft:glass 0 10 minecraft:glass 0 11 minecraft:glass 0
+appliedenergistics2:item.ItemMultiPart 140 quartz_fiber
+1 minecraft:glass 0 2 minecraft:glass 0 3 minecraft:glass 0 5 appliedenergistics2:item.ItemMultiMaterial 2 6 appliedenergistics2:item.ItemMultiMaterial 2 7 appliedenergistics2:item.ItemMultiMaterial 2 9 minecraft:glass 0 10 minecraft:glass 0 11 minecraft:glass 0
+appliedenergistics2:item.ItemMultiPart 16 me_cable
+1 appliedenergistics2:item.ItemMultiPart 140 2 appliedenergistics2:item.ItemMultiMaterial 12 3 appliedenergistics2:item.ItemMultiMaterial 12
+appliedenergistics2:tile.BlockQuartzGlass 0 certus_quartz_glass
+1 appliedenergistics2:item.ItemMultiMaterial 2 2 minecraft:glass 0 3 appliedenergistics2:item.ItemMultiMaterial 2 5 minecraft:glass 0 6 appliedenergistics2:item.ItemMultiMaterial 2 7 minecraft:glass 0 9 appliedenergistics2:item.ItemMultiMaterial 2 10 minecraft:glass 0 11 appliedenergistics2:item.ItemMultiMaterial 2
+appliedenergistics2:item.ItemBasicStorageCell.1k 0 1k_me_storage
+1 appliedenergistics2:tile.BlockQuartzGlass 0 2 minecraft:redstone 0 3 appliedenergistics2:tile.BlockQuartzGlass 0 5 minecraft:redstone 0 6 appliedenergistics2:item.ItemMultiMaterial 35 7 minecraft:redstone 0 9 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0 11 minecraft:iron_ingot 0
