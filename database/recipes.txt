@@ -96,6 +96,7 @@ simplyjetpacks:components 11 leadstone_thruster
 1 ThermalFoundation:material 67 2 ThermalExpansion:material 1 3 ThermalFoundation:material 67 5 ThermalDynamics:ThermalDynamics_0 0 6 ThermalExpansion:Dynamo 0 7 ThermalDynamics:ThermalDynamics_0 0 9 ThermalFoundation:material 67 10 minecraft:redstone 0 11 ThermalFoundation:material 67
 simplyjetpacks:jetpacks 1 leadstone_jetpack
 1 ThermalFoundation:material 67 2 ThermalExpansion:capacitor 2 3 ThermalFoundation:material 67 5 ThermalFoundation:material 67 6 simplyjetpacks:components 0 7 ThermalFoundation:material 67 9 simplyjetpacks:components 11 11 simplyjetpacks:components 11
+<<<<<<< HEAD
 minecraft:string 0 string
 1 Natura:barleyFood 3 2 Natura:barleyFood 3 3 Natura:barleyFood 3
 appliedenergistics2:tile.BlockInscriber 0 inscriberae2
@@ -234,3 +235,5 @@ appliedenergistics2:tile.BlockQuartzGlass 0 certus_quartz_glass
 1 appliedenergistics2:item.ItemMultiMaterial 2 2 minecraft:glass 0 3 appliedenergistics2:item.ItemMultiMaterial 2 5 minecraft:glass 0 6 appliedenergistics2:item.ItemMultiMaterial 2 7 minecraft:glass 0 9 appliedenergistics2:item.ItemMultiMaterial 2 10 minecraft:glass 0 11 appliedenergistics2:item.ItemMultiMaterial 2
 appliedenergistics2:item.ItemBasicStorageCell.1k 0 1k_me_storage
 1 appliedenergistics2:tile.BlockQuartzGlass 0 2 minecraft:redstone 0 3 appliedenergistics2:tile.BlockQuartzGlass 0 5 minecraft:redstone 0 6 appliedenergistics2:item.ItemMultiMaterial 35 7 minecraft:redstone 0 9 minecraft:iron_ingot 0 10 minecraft:iron_ingot 0 11 minecraft:iron_ingot 0
+=======
+>>>>>>> d2f0a7f683ed940b1d330d0b3cefb7bbf7fd9c95
