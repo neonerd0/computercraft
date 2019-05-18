@@ -194,9 +194,9 @@ end
 
 function oppositeDirectionStr(dir)
     if dir == "left" then
-        return "WEST"
-    elseif dir == "right" then
         return "EAST"
+    elseif dir == "right" then
+        return "WEST"
     elseif dir == "top" then
         return "DOWN"
     elseif dir == "bottom" then
@@ -204,7 +204,7 @@ function oppositeDirectionStr(dir)
     elseif dir == "front" then
         return "SOUTH"
     elseif dir == "back" then
-        return "NOTH"
+        return "NORTH"
     end
 end
 
