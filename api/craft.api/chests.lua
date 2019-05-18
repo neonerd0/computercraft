@@ -30,7 +30,7 @@ function getAdjChests(validChestList)
         peripheralType = peripheral.getType(plist[i])
         print(" ", plist[i], " type: ", peripheralType)
         if isValidChest(peripheralType, validChestList) then
-            table.insert(c, peripheral.wrap(plist[i]))
+            c[plist[i]] = peripheral.wrap(plist[i])
         end
     end
     return c
