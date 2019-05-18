@@ -4,7 +4,7 @@ t = transformation.newTransform()
 
 local tArgs = {...}
 if #tArgs ~= 3 then
-  print("Requires length, width, height")
+  print("Requires width, length, height")
   return
 end
 
