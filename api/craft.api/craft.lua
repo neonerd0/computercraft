@@ -5,7 +5,6 @@ validChests = chests.loadValidChests()
 chestList = chests.getAdjChests(validChests)
 
 inputChest = peripheral.wrap("top")
-outputChest = peripheral.wrap("bottom")
 
 loadedRecipes = {}
 
@@ -193,19 +192,42 @@ function getUniqueID(slot)
 end
 
 
+function oppositeDirectionStr(dir)
+    if dir == "left" then
+        return "WEST"
+    elseif dir == "right" then
+        return "EAST"
+    elseif dir == "top" then
+        return "DOWN"
+    elseif dir == "bottom" then
+        return "UP"
+    elseif dir == "front" then
+        return "SOUTH"
+    elseif dir == "back" then
+        return "NOTH"
+    end
+end
+
+
 function fetchItemFromChest(itemName, itemDamage, turtleSlot, qty)
-    i = inspectchest.getSlotWithItem(inputChest, itemName, itemDamage)
-    if i ~= nil then
-        b = inputChest.pushItem("down", i, qty, turtleSlot)
-        print(b, "/", qty)
-        if b == nil or b < qty then
-            return false
-        else
-            return true
+
+    for k, vchest in pairs(chestList) do
+        i = inspectchest.getSlotWithItem(vchest, itemName, itemDamage)
+        if i ~= nil then
+            dir = oppositeDirectionStr(k)
+            b = vchest.pushItem(dir, i, qty, turtleSlot)
+            print(b, "/", qty)
+            if b == nil then
+                return false
+            elseif b < qty then
+                qty = qty - b
+            else
+                return true
+            end
         end
     end
 
-    return false
+    return qty <= 0
 end
 
 
@@ -223,17 +245,17 @@ function tryCraft(recipe, qty)
 
             local uid = getUniqueID(recipe.slot[i])
             print("We need: ", uid)
-            local b = fetchItemFromChest(recipe.slot[i].name, recipe.slot[i].damage, i, gQty)
+            local b = fetchItemFromChest(recipe.slot[i].name, recipe.slot[i].damage, i, qty)
 
             --- fail to get item from chest, try to make one
             if b == false then
                 b = isRecoginizedRecipe(uid)
                 if b == true then
                     dump.dump_all_up()
-                    if tryCraft(loadedRecipes[uid], gQty) == false then
+                    if tryCraft(loadedRecipes[uid], qty) == false then
                         return false
                     end
-                    if tryCraft(recipe) == true then
+                    if tryCraft(recipe, qty) == true then
                         return true
                     else
                         return false
@@ -254,21 +276,38 @@ function tryCraft(recipe, qty)
 end
 
 
+function tryCraftLoop(recipe, totalQty)
+    gQty = totalQty
+    repeat
+        print(gQty, " items left to craft...")
+        currQty = math.min(gQty, 64)
+        b = tryCraft(recipe, currQty)
+        gQty = gQty - currQty
+    until b == false or gQty <= 0
+    if b == false then
+        print("Failed to craft items!")
+    end
+    if gQty <= 0 then
+        print("Finished crafting target quantity!")
+    end
+    return b
+end
+
+
 function tryCraftWithHint(hint, qty)
     loadedRecipes = loadAllRecipes()
     gQty = qty;
     for k, v in pairs(loadedRecipes) do
         if v.hint == hint then
-            b = tryCraft(loadedRecipes[k], gQty)
-            if b == true then
-                return true
-            end
+            b = tryCraftLoop(loadedRecipes[k], gQty)
+            return b
         end
     end
 
     --- the hint might be a UID 
     if isRecoginizedRecipe(hint) then
-        tryCraft(loadedRecipes[hint], qty)
+        b = tryCraftLoop(loadedRecipes[hint], gQty)
+        return b
     end
 end
 
@@ -308,8 +347,6 @@ elseif #args == 3 then
         local qty = tonumber(args[3])
         if qty < 1 then
             qty = 1
-        elseif qty > 64 then
-            qty = 64
         end
         tryCraftWithHint(target, qty)
     end

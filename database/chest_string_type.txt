@@ -5,3 +5,4 @@ silver
 gold
 diamond
 ender_chest
+deep_storage_unit
